@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 12. Multiplicacion de Sumas Sucesivas</title>
+    <link rel="stylesheet" href="CSS/estiloprincipal.css">
+  </head>
+  <body>
+    <div class="contenedor">
+    <header>
+    <img class="logo-left" src="logo/tecnm.png" alt="">
+    <center><h1><FONT size="6" FACE="Verdana">Ejercicio 12</FONT></h1></center>
+   </header>
+  <section>
+    <article >
+      <center>
+    <h3><FONT size="5" FACE="Verdana">Unidad III</FONT></h3></center>
+    <ul>
+      <p>Elaborar un script que pida 2 numeros y los multiplique sucesivamente por medio de sumas sucesivas</p>
+    </ul>
+  </body>
+  <script type="text/javascript">
+    var resultado = 0;
+    var numero1=parseInt(valor=prompt('¿Ingrese un numero?',''));
+    var numero2=parseInt(valor=prompt('¿Ingrese un numero?',''));
+    for (var i = 0; i < numero2; i++) {
+      resultado = numero1 + resultado;
+    }
+    document.write(resultado);
+  </script>
+  <center>
+  </center>
+  <br>
+  <br>
+      </article>
+        </section>
+    <footer>
+      <div class="izquierda">
+      </div>
+    </footer>
+    </div>
+    </body>
+    </html>

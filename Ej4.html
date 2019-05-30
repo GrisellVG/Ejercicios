@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 4. Estructuras condicionales</title>
+      <link rel="stylesheet" href="CSS/estiloprincipal.css">
+  </head>
+  <body>
+    <div class="contenedor">
+    <header>
+    <img class="logo-left" src="logo/tecnm.png" alt="">
+    <center><h1><FONT size="6" FACE="Verdana">Ejercicio 4</FONT></h1></center>
+   </header>
+  <section>
+    <article >
+      <center>
+    <h3><FONT size="5" FACE="Verdana">Unidad III</FONT></h3></center>
+  <p>Ejercicio 4. Elabore un script que solicite el nombre de la persona y el tiempo que esta aguanta sumergida en el agua,
+  posteriormente muestre un mensaje con su nombre indicado como esta catalogado, tomando en cuenta lo siguiente:</p>
+  <ul>
+    <li>
+      <p>Si aguanta sumergido bajo el agua 1 minuto es Normal</p>
+    </li>
+    <li>
+      <p>Si aguanta sumergido bajo el agua menos de 1 minuto tiene Asma</p>
+    </li>
+    <li>
+      <p>Si aguanta sumergido bajo el agua más de 1 minuto es ACUAMAN</p>
+    </li>
+  </ul>
+  <script type="text/javascript">
+
+  var nombre, tiempo;
+
+  nombre=prompt('¿Cuál es tu nombre?','');
+  tiempo=prompt('¿Cuánto aguantas sumergido en el agua?','');
+
+    if (tiempo==60)
+    {
+      document.write(nombre + 'Eres una persona Normal' + '<img src="logo/miley.jpg">');
+    }
+    else if (tiempo<60)
+    {
+      document.write(nombre + 'Eres una persona con ASMA' + '<img src="logo/asma-tabacos.jpg">');
+    }
+    else
+    {
+       document.write(nombre + 'Eres ACUAMAN' + '<img src="logo/aquaman-355320736-large.jpg">');
+    }
+  </script>
+  <center>
+  </center>
+  <br>
+  <br>
+      </article>
+        </section>
+    <footer>
+      <div class="izquierda">
+      </div>
+    </footer>
+    </div>
+    </body>
+    </html>

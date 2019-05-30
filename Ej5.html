@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5. Nivel de desempeño</title>
+    <link rel="stylesheet" href="CSS/estiloprincipal.css">
+  </head>
+  <body>
+    <div class="contenedor">
+    <header>
+    <img class="logo-left" src="logo/tecnm.png" alt="">
+    <center><h1><FONT size="6" FACE="Verdana">Ejercicio 5</FONT></h1></center>
+   </header>
+  <section>
+    <article >
+      <center>
+    <h3><FONT size="5" FACE="Verdana">Unidad III</FONT></h3></center>
+    <p>Elabore un script  que solicite el nombre de un alumno y 5
+       calificaciones , para determinar cuál es su promedio
+       y nivel de desempeño en la clase de Programación Web.
+       Para determinar el nivel de desempeño deberá basarse en la
+       siguiente información:</p>
+    <ul>
+      <li>
+        <p>Promedio menor o igual a 60: “Desempeño Insuficiente”</p>
+      </li>
+      <li>
+        <p>Promedio igual a 70 pero menor que 80: “Desempeño Suficiente”</p>
+      </li>
+      <li>
+        <p>Promedio igual a 80 pero menor que 90: “Desempeño Bueno”</p>
+      </li>
+      <li>
+        <p>Promedio igual a 90 pero menor que 100: “Desempeño Notable”</p>
+      </li>
+      <li>
+        <p>Promedio igual a 100: “Desempeño Excelente” </p>
+      </li>
+    </ul>
+    <script type="text/javascript">
+      var nombre, cal1, cal2, cal3, cal4, cal5, promedio;
+
+      nombre=prompt('¿Cuál es su nombre?','');
+      cal1=parseInt(cal1=prompt('Calificación 1:',''));
+      cal2=parseInt(cal2=prompt('Calificación 2:',''));
+      cal3=parseInt(cal3=prompt('Calificación 3:',''));
+      cal4=parseInt(cal4=prompt('Calificación 4:',''));
+      cal5=parseInt(cal5=prompt('Calificación 5:',''));
+
+      promedio=(cal1+cal2+cal3+cal4+cal5)/5;
+
+      if (promedio<=60)
+      {
+        document.write('Desempeño Insuficiente');
+      }
+      else if  (promedio<=80) {
+
+            document.write('Desempeño Suficiente');
+      }
+      else if  (promedio<=90) {
+
+            document.write('Desempeño Bueno');
+      }
+      else if (promedio<100) {
+        document.write('Desempeño Notable');
+      }
+      else if (promedio==100) {
+          document.write('Desempeño Excelente');
+      }
+    </script>
+    <center>
+    </center>
+    <br>
+    <br>
+        </article>
+          </section>
+      <footer>
+        <div class="izquierda">
+        </div>
+      </footer>
+      </div>
+      </body>
+      </html>
